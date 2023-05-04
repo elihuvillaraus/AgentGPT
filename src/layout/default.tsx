@@ -12,7 +12,8 @@ interface LayoutProps {
 
 const DefaultLayout = (props: LayoutProps) => {
   const [t] = useTranslation();
-  const description = t("HEADING_DESCRIPTION", { ns: "indexPage" });
+  const description =
+    "Embárcate en cualquier meta imaginable con el poder de la AI 🧠➕🤖";
 
   return (
     <div
@@ -36,7 +37,7 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta name="twitter:image:height" content="640" />
         <meta
           property="og:title"
-          content="STRATEGAI: Embárcate en cualquier meta imaginable con el poder de la AI. 🤖"
+          content="Embárcate en cualquier meta imaginable con el poder de la AI 🧠➕🤖"
         />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://www.marketinc.mx" />
