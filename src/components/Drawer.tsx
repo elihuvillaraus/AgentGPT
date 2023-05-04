@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
+import Image from "next/image";
 import {
   FaBars,
   FaCog,
@@ -13,7 +15,11 @@ import {
   FaSignOutAlt,
   FaTwitter,
   FaUser,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
 } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import clsx from "clsx";
 import { useAuth } from "../hooks/useAuth";
 import type { Session } from "next-auth";
@@ -82,7 +88,7 @@ const Drawer = ({
   };
 
   const handleSupport = () => {
-    const donationUrl = "https://github.com/sponsors/reworkd-admin";
+    const donationUrl = "https://www.marketinc.mx";
     window.open(donationUrl, "_blank");
   };
 
@@ -100,7 +106,14 @@ const Drawer = ({
       >
         <div className="flex flex-col gap-1 overflow-hidden">
           <div className="mb-2 flex justify-center gap-2">
-            <p className="font-bold">{`${t("MY_AGENTS", { ns: "drawer" })}`}</p>
+            <Link href="https://marketinc.mx" target="_blank">
+              <Image
+                src="/logoMarketincBlanco.png"
+                width={120}
+                height={40}
+                alt="MarketINC Top Digital Marketing Agency"
+              />
+            </Link>
             <button
               className={clsx(
                 showDrawer
@@ -136,7 +149,27 @@ const Drawer = ({
                 >
                   {`${t("SIGN_IN", { ns: "drawer" })}`}
                 </a>{" "}
-                {`${t("SIGN_IN_NOTICE", { ns: "drawer" })}`}
+                <p className="mt-3 text-sm">
+                  {`${t("SIGN_IN_NOTICE", { ns: "drawer" })}`}
+                </p>
+                <div className="flex justify-around text-sm">
+                  <Link href="https://marketinc.mx" target="_blank">
+                    <button
+                      type="button"
+                      className="my-10 rounded-lg bg-gradient-to-l from-violet-600 px-2 py-2.5  font-medium outline-violet-500 ring-violet-500/50 hover:outline-2 hover:ring-2 focus:outline-none focus:ring-2"
+                    >
+                      Conocer más
+                    </button>
+                  </Link>
+                  <Link href="https://marketinc.mx/contacto" target="_blank">
+                    <button
+                      type="button"
+                      className="my-10 rounded-lg bg-gradient-to-r from-sky-600 px-2 py-2.5  font-medium outline-sky-500 ring-sky-500/50 hover:outline-2 hover:ring-2 focus:outline-none focus:ring-2"
+                    >
+                      Contacto
+                    </button>
+                  </Link>
+                </div>
               </div>
             )}
             {status === "authenticated" && userAgents.length === 0 && (
@@ -172,7 +205,7 @@ const Drawer = ({
             text={`${t("SUPPORT_BUTTON", { ns: "drawer" })}`}
             onClick={handleSupport}
           />
-          <DrawerItem
+          {/* <DrawerItem
             icon={
               <FaCog className="transition-transform group-hover:rotate-90" />
             }
@@ -180,42 +213,54 @@ const Drawer = ({
               ns: "drawer",
             })}`}
             onClick={showSettings}
-          />
+          /> */}
           <FadingHr className="my-2" />
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center justify-center">
             <DrawerItem
               icon={
-                <FaDiscord
+                <CiMail
                   size={30}
-                  className="transition-colors group-hover:fill-current group-hover:text-indigo-400"
+                  className="transition-colors group-hover:fill-current group-hover:text-gray-500"
                 />
               }
-              text="Discord"
-              href="https://discord.gg/jdSBAnmdnY"
+              text="Mail"
+              href="https:www.marketinc.mx/contacto"
               target="_blank"
               small
             />
             <DrawerItem
               icon={
-                <FaTwitter
+                <FaLinkedinIn
                   size={30}
                   className="transition-colors group-hover:fill-current group-hover:text-sky-500"
                 />
               }
-              text="Twitter"
-              href="https://twitter.com/asimdotshrestha/status/1644883727707959296"
+              text="LinkedIN MarketINC Agency"
+              href="https://www.linkedin.com/company/market_inc/"
               target="_blank"
               small
             />
             <DrawerItem
               icon={
-                <FaGithub
+                <FaFacebookF
+                  size={30}
+                  className="transition-colors group-hover:fill-current group-hover:text-blue-500"
+                />
+              }
+              text="Facebook MarketINC Agency"
+              href="http://facebook.com/MarketINC.DigitalAgency"
+              target="_blank"
+              small
+            />
+            <DrawerItem
+              icon={
+                <FaInstagram
                   size={30}
                   className="transition-colors group-hover:fill-current group-hover:text-purple-500"
                 />
               }
-              text="GitHub"
-              href="https://github.com/reworkd/AgentGPT"
+              text="Instagram MarketINC Agency"
+              href="https://www.instagram.com/marketinc/"
               target="_blank"
               small
             />

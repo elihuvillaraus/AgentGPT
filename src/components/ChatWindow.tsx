@@ -144,22 +144,22 @@ const ChatWindow = ({
             <PopIn delay={1.5}>
               <div className="m-2 flex flex-col justify-between gap-2 sm:m-4 sm:flex-row">
                 <ExampleAgentButton
-                  name="PlatformerGPT 🎮"
+                  name="PlannerGPT 📈"
                   setAgentRun={setAgentRun}
                 >
-                  Write some code to make a platformer game.
+                  Escribe un plan de difusión para un nuevo producto.
                 </ExampleAgentButton>
                 <ExampleAgentButton
                   name="TravelGPT 🌴"
                   setAgentRun={setAgentRun}
                 >
-                  Plan a detailed trip to Hawaii.
+                  Planea un viaje a Hawaii.
                 </ExampleAgentButton>
                 <ExampleAgentButton
-                  name="ResearchGPT 📜"
+                  name="InvestigaGPT 📜"
                   setAgentRun={setAgentRun}
                 >
-                  Create a comprehensive report of the Nike company
+                  Crea un reporte completo de la compañía Nike
                 </ExampleAgentButton>
               </div>
             </PopIn>
@@ -202,7 +202,7 @@ const ExampleAgentButton = ({
     <div
       className={clsx(
         `w-full p-2 sm:w-[33%]`,
-        `cursor-pointer rounded-lg bg-sky-600 font-mono text-sm hover:bg-sky-700 sm:text-base`,
+        `bg-clip cursor-pointer rounded-lg bg-gradient-to-r from-indigo-600 to-sky-600 font-mono text-sm text-zinc-200 hover:bg-sky-700 sm:text-base`,
         `border-[2px] border-white/20 hover:border-[#1E88E5]/40`
       )}
       onClick={handleClick}

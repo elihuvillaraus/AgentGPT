@@ -1,6 +1,8 @@
 {
-  "WELCOME_TO_AGENT_GPT": "Bienvenido a AgentGPT",
-  "INTRODUCING_AGENTGPT": "le permite configurar y ejecutar agentes de inteligencia artificial autónomos a través de su navegador. Nombra tu agente de IA personalizado y define su objetivo. El agente de IA intentará alcanzar el objetivo definido mediante la creación de tareas, su ejecución y la evaluación de sus resultados 🚀",
+  "WELCOME_TO_AGENT_GPT": "Bienvenido a S.T.R.A.T.E.G.A 🧠 ➕",
+  "INTRODUCING_AGENTGPT": "te permite lograr tus objetivos con ayuda del poder de la AI. Nombra a tu AI personalizado y hazlo embarcarse en cualquier meta imaginable. Intentará alcanzar la meta pensando en tareas a realizar, ejecutándolas y aprendiendo de los resultados 🚀",
+  "AGENTGPT_DOCUMENTATION": "MarketINC Top Digital Agency",
+  "TO_LEARN_MORE_ABOUT_AGENTGPT": "Para conocer más sobre lo que la AI puede hacer por ti y tu empresa visita nuestro sitio web ",
   "PLATFORM_BETA_DESCRIPTION": "Esta plataforma está actualmente en versión beta y estamos trabajando en las siguientes características:",
   "LONG_TERM_MEMORY": "Memoria a largo plazo 🧠",
   "WEB_BROWSING": "Navegación web 🌐",

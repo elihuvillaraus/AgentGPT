@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 import { type NextPage, type GetStaticProps } from "next";
+import Footer from "../layout/footer";
 import Badge from "../components/Badge";
 import DefaultLayout from "../layout/default";
 import ChatWindow from "../components/ChatWindow";
@@ -186,7 +187,7 @@ const Home: NextPage = () => {
     isAgentPaused && !isAgentStopped ? (
       <Button ping disabled={!isAgentPaused} onClick={handleContinue}>
         <FaPlay size={20} />
-        <span className="ml-2">{i18n.t("CONTINUE", {ns: 'common'})}</span>
+        <span className="ml-2">{i18n.t("CONTINUE", { ns: "common" })}</span>
       </Button>
     ) : (
       <Button
@@ -195,11 +196,11 @@ const Home: NextPage = () => {
         onClick={() => handleNewGoal(nameInput, goalInput)}
       >
         {agent == null ? (
-          i18n.t("BUTTON_DEPLOY_AGENT", {ns: 'indexPage'})
+          i18n.t("BUTTON_DEPLOY_AGENT", { ns: "indexPage" })
         ) : (
           <>
             <VscLoading className="animate-spin" size={20} />
-            <span className="ml-2">{i18n.t("RUNNING", {ns: 'common'})}</span>
+            <span className="ml-2">{i18n.t("RUNNING", { ns: "common" })}</span>
           </>
         )}
       </Button>
@@ -243,10 +244,10 @@ const Home: NextPage = () => {
             >
               <div className="flex flex-row items-start shadow-2xl">
                 <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
-                  Agent
+                  S.T.R.A.T.E.G.
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
-                  GPT
+                  AI
                 </span>
                 <PopIn delay={0.5}>
                   <Badge>
@@ -356,6 +357,9 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <div className="flex justify-center">
+        <Footer />
+      </div>
     </DefaultLayout>
   );
 };

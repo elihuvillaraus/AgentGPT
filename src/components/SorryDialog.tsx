@@ -9,20 +9,32 @@ export interface SorryDialogProps {
 
 export const SorryDialog = ({ show, close }: SorryDialogProps) => {
   return (
-    <Dialog header={`${i18n?.t("SORRY_TITLE", "SORRY_TITLE", {ns: 'sorryDialog'})}`} isShown={show} close={close}>
-      <p>{`${i18n?.t("REASON_OF_DISABLE_WEB_SEARCH", "REASON_OF_DISABLE_WEB_SEARCH", {ns: 'sorryDialog'})}`}</p>
+    <Dialog
+      header={`${i18n?.t("SORRY_TITLE", "SORRY_TITLE", { ns: "sorryDialog" })}`}
+      isShown={show}
+      close={close}
+    >
+      <p>{`${i18n?.t(
+        "REASON_OF_DISABLE_WEB_SEARCH",
+        "REASON_OF_DISABLE_WEB_SEARCH",
+        { ns: "sorryDialog" }
+      )}`}</p>
       <br />
       <p>
-      {`${i18n?.t("PLEASE_MONITOR", "PLEASE_MONITOR", {ns: 'sorryDialog'})}`}
+        {`${i18n?.t("PLEASE_MONITOR", "PLEASE_MONITOR", {
+          ns: "sorryDialog",
+        })}`}
         <a
           className="link"
-          href="https://reworkd.github.io/AgentGPT-Documentation/docs/roadmap"
+          href="https://www.marketinc.mx"
           target="_blank"
           rel="noreferrer"
         >
-          {`${i18n?.t("ROADMAP", "ROADMAP", {ns: 'sorryDialog'})}`}
+          {`${i18n?.t("ROADMAP", "ROADMAP", { ns: "sorryDialog" })}`}
         </a>
-        {`${i18n?.t("PLEASE_MONITOR_END_TEXT", "PLEASE_MONITOR_END_TEXT", {ns: 'sorryDialog'})}`}
+        {`${i18n?.t("PLEASE_MONITOR_END_TEXT", "PLEASE_MONITOR_END_TEXT", {
+          ns: "sorryDialog",
+        })}`}
       </p>
     </Dialog>
   );

@@ -22,35 +22,35 @@ const DefaultLayout = (props: LayoutProps) => {
       )}
     >
       <Head>
-        <title>AgentGPT</title>
+        <title>STRATEGAI - MarketINC</title>
         <meta name="description" content={description} />
-        <meta name="twitter:site" content="@AgentGPT" />
+        <meta name="twitter:site" content="@market_inc" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AgentGPT 🤖" />
+        <meta name="twitter:title" content="STRATEGAI 🤖" />
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content="https://agentgpt.reworkd.ai/banner.png"
+          content="https://marketinc-website.s3.amazonaws.com/portada_sitio_46f01758fe.png"
         />
         <meta name="twitter:image:width" content="1280" />
         <meta name="twitter:image:height" content="640" />
         <meta
           property="og:title"
-          content="AgentGPT: Autonomous AI in your browser 🤖"
+          content="STRATEGAI: Embárcate en cualquier meta imaginable con el poder de la AI. 🤖"
         />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content="https://agentgpt.reworkd.ai/" />
+        <meta property="og:url" content="https://www.marketinc.mx" />
         <meta
           property="og:image"
-          content="https://agentgpt.reworkd.ai/banner.png"
+          content="https://marketinc-website.s3.amazonaws.com/portada_sitio_46f01758fe.png"
         />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="640" />
         <meta property="og:type" content="website" />
-        <meta
-          name="google-site-verification"
-          content="sG4QDkC8g2oxKSopgJdIe2hQ_SaJDaEaBjwCXZNkNWA"
-        />
+        {/* <meta
+    name="google-site-verification"
+    content="sG4QDkC8g2oxKSopgJdIe2hQ_SaJDaEaBjwCXZNkNWA"
+  /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DottedGridBackground

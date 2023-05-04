@@ -1,11 +1,12 @@
 {
   "HELP_BUTTON": "Ayuda",
   "SETTINGS_BUTTON": "Configuraciones",
+  "SUPPORT_BUTTON": "Soporte",
   "MY_AGENTS": "Mis agentes",
-  "SIGN_IN_NOTICE": "¡Inicie sesión para guardar sus agentes y administrar su cuenta!",
+  "SIGN_IN_NOTICE": "Este asistente AI es solo una de las herramientas que en MarketINC ponemos a tu disposición. ¡Conviértete en nuestro cliente y descubre cómo podemos impulsar tus estrategias de negocio, marketing y ventas para alcanzar resultados excepcionales! Contáctanos hoy mismo.",
   "NEED_TO_SIGN_IN_AND_CREATE_AGENT_FIRST": "¡Primero debe crear y guardar su primer agente antes de que algo aparezca aquí!",
-  "SIGN_IN": "Iniciar sesión",
+  "SIGN_IN": "¿Te gustó S.T.R.A.T.E.G.A.?",
   "SIGN_OUT": "Cerrar sesión",
-  "ACCOUNT" : "Cuenta",
+  "ACCOUNT": "Cuenta",
   "USER_IMAGE": "Imagen de usuario"
 }
