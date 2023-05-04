@@ -35,10 +35,7 @@ const DefaultLayout = (props: LayoutProps) => {
         />
         <meta name="twitter:image:width" content="1280" />
         <meta name="twitter:image:height" content="640" />
-        <meta
-          property="og:title"
-          content="Embárcate en cualquier meta imaginable con el poder de la AI 🧠➕🤖"
-        />
+        <meta property="og:title" content="S.T.R.A.T.E.G.AI - MarketINC" />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://www.marketinc.mx" />
         <meta
