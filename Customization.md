@@ -193,7 +193,75 @@ const ExampleAgentButton = ({
 
 - º Ve a `/public/locales/es/indexPage.json` y cambia el valor:
 
-````json
+```json
+"DEMO_LOOPS_REACHED": "Lo siento, como esta es una aplicación de demostración, no podemos ejecutar nuestros agentes durante mucho tiempo. Nota: Si desea ejecuciones más largas, proporcione una clave de API personalizada en Configuración. Deteniendo...",
+```
+
+Por este:
+
+```json
+"DEMO_LOOPS_REACHED": "¡Ups!, como esta es una aplicación de demostración, no podemos ejecutar nuestros agentes durante mucho tiempo. Nota: Si deseas ejecuciones más largas y conocer más sobre lo que la AI puede hacer por ti y tu empresa visita nuestro sitio web marketinc.mx. Deteniendo...",
+```
+
+6. Cambiar el título de la ventana tipo Mac:
+
+- Ve a index.tsx y cambia el valor de:
+
+```tsx
+<Expand className="flex w-full flex-row">
+  <ChatWindow
+    className="sm:mt-4"
+    messages={messages}
+    title={session?.user.subscriptionId ? proTitle : "AgentGPT"}
+    onSave={
+      shouldShowSave
+        ? (format) => {
+            setHasSaved(true);
+            agentUtils.saveAgent({
+              goal: goalInput.trim(),
+              name: nameInput.trim(),
+              tasks: messages,
+            });
+          }
+        : undefined
+    }
+    scrollToBottom
+    displaySettings
+    openSorryDialog={() => setShowSorryDialog(true)}
+    setAgentRun={setAgentRun}
+  />
+  {tasks.length > 0 && <TaskWindow />}
+</Expand>
+```
+
+Por este:
+
+```tsx
+<Expand className="flex w-full flex-row">
+  <ChatWindow
+    className="sm:mt-4"
+    messages={messages}
+    title={session?.user.subscriptionId ? proTitle : "MarketINC AI"}
+    onSave={
+      shouldShowSave
+        ? (format) => {
+            setHasSaved(true);
+            agentUtils.saveAgent({
+              goal: goalInput.trim(),
+              name: nameInput.trim(),
+              tasks: messages,
+            });
+          }
+        : undefined
+    }
+    scrollToBottom
+    displaySettings
+    openSorryDialog={() => setShowSorryDialog(true)}
+    setAgentRun={setAgentRun}
+  />
+  {tasks.length > 0 && <TaskWindow />}
+</Expand>
+```
 
 ## Drawer
 
@@ -223,7 +291,7 @@ const ExampleAgentButton = ({
     <FaBars />
   </button>
 </div>
-````
+```
 
 - - 3. Coloca el logo y favicons en `/public/logoMarketincBlanco.png`
 

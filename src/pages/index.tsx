@@ -271,7 +271,7 @@ const Home: NextPage = () => {
               <ChatWindow
                 className="sm:mt-4"
                 messages={messages}
-                title={session?.user.subscriptionId ? proTitle : "AgentGPT"}
+                title={session?.user.subscriptionId ? proTitle : "MarketINC AI"}
                 onSave={
                   shouldShowSave
                     ? (format) => {
