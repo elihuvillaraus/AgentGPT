@@ -189,6 +189,12 @@ const ExampleAgentButton = ({
 
 - Falta cambiar el link. Ve a `../components/SorryDialog` y cambia el valor de `link` a https://www.marketinc.mx
 
+5. Cambiar el mensaje de demo:
+
+- º Ve a `/public/locales/es/indexPage.json` y cambia el valor:
+
+````json
+
 ## Drawer
 
 1. Cambiar logo
@@ -217,7 +223,7 @@ const ExampleAgentButton = ({
     <FaBars />
   </button>
 </div>
-```
+````
 
 - - 3. Coloca el logo y favicons en `/public/logoMarketincBlanco.png`
 
