@@ -9,8 +9,8 @@ const Badge = ({ children }: BadgeProps) => {
   return (
     <div
       className={clsx(
-        "mt-2 rounded-full bg-sky-500 font-semibold text-gray-100 transition-all hover:scale-110",
-        "px-1 py-1 text-xs",
+        "ml-1 rounded-full bg-sky-500 text-xs font-semibold text-gray-100 transition-all hover:scale-110 sm:mt-2",
+        "px-1 py-1",
         "sm:px-3 sm:py-1 sm:text-sm"
       )}
     >
