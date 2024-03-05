@@ -205,7 +205,7 @@ const Drawer = ({
             text={`${t("SUPPORT_BUTTON", { ns: "drawer" })}`}
             onClick={handleSupport}
           />
-          {/* <DrawerItem
+          <DrawerItem
             icon={
               <FaCog className="transition-transform group-hover:rotate-90" />
             }
@@ -213,7 +213,7 @@ const Drawer = ({
               ns: "drawer",
             })}`}
             onClick={showSettings}
-          /> */}
+          />
           <FadingHr className="my-2" />
           <div className="flex flex-row items-center justify-center">
             <DrawerItem
